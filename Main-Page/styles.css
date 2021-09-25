@@ -4,15 +4,24 @@
   padding: 0;
   font-family: "font-family: Tahoma, sans-serif";
   scroll-behavior: smooth;
+  overflow-y: visible;
   overflow-x: hidden;
+
+}
+
+.v-generated-body {
+  min-width: 600px;
+  overflow: auto;
 }
 
 a, a:hover, a:visited, a:active {
+  overflow-x: hidden;
   color: white;
   text-decoration: none;
  }
 
 .header {
+  overflow-x: hidden;
   padding: 60px;
   text-align: center;
   background: #fafafa;
@@ -21,6 +30,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .navbar {
+  overflow-x: hidden;
   background: #0D0D0D;
   height: 60px;
   display: flex;
@@ -34,6 +44,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .navbar__container {
+  overflow-x: hidden;
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -44,16 +55,19 @@ a, a:hover, a:visited, a:active {
 }
 
 .navbar__menu {
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   list-style: none;
 }
 
 .navbar__item {
+  overflow-x: hidden;
   height: 80px;
 }
 
 .navbar__links {
+  overflow-x: hidden;
   color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
@@ -64,15 +78,10 @@ a, a:hover, a:visited, a:active {
   transition: all 0.3s ease-in-out;
 }
 
-.navbar__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-}
+
 
 .button {
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,6 +96,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .navbar__links:hover {
+  overflow-x: hidden;
   color: #36A0D9;
   transition: all 0.3s ease;
 }
@@ -95,27 +105,29 @@ a, a:hover, a:visited, a:active {
 
 
 #stack {
+  overflow-x: hidden;
   position: absolute;
   top: 10px;
   right: 80px;
 }
 
 #engineer {
+  overflow-x: hidden;
   position: absolute;
   top: 0px;
   right: 160px;
 }
 
 #twitter {
+  overflow-x: hidden;
   position: absolute;
   top: 15px;
   right: 260px;
 }
 
 
-
-
 .Main {
+  overflow-x: hidden;
   padding: auto;
   width: auto;
   height: 7850px;
@@ -123,10 +135,8 @@ a, a:hover, a:visited, a:active {
 
 }
 
-
-
-
 .Text_4 {
+  overflow-x: hidden;
   position: absolute;
   top: 1000px;
   right: calc(50% - 100px);
@@ -139,15 +149,17 @@ a, a:hover, a:visited, a:active {
 }
 
 .Text_3 {
+  overflow-x: hidden;
   position: absolute;
   top: 825px;
   right: calc(50% - 100px);
   font-size: 2.5em;
-  color: rgb(23, 141, 177);
+  color: rgb(58, 135, 158);
 
 }
 
 .Text_2 {
+  overflow-x: hidden;
   position: absolute;
   top: 240px;
   right: calc(50% - 405px);
@@ -157,6 +169,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .Text_1 {
+  overflow-x: hidden;
   position: absolute;
   top: 325px;
   right: calc(50% - 315px);
@@ -169,6 +182,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .Text_5 {
+  overflow-x: hidden;
   position: absolute;
   top: 1700px;
   width: 2000px;
@@ -176,7 +190,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .line {
-
+  overflow-x: hidden;
   position: absolute;
   top: 330px;
   right: calc(50% - 375px);
@@ -184,7 +198,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .page-header {
-
+  overflow-x: hidden;
   max-width: 100%;
   min-height: 900px;
   height: 900px;
@@ -196,6 +210,7 @@ a, a:hover, a:visited, a:active {
 
 
 .services h1 {
+  overflow-x: hidden;
   background-color: #ff8177;
   background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
   background-size: 100%;
@@ -208,16 +223,18 @@ a, a:hover, a:visited, a:active {
 }
 
 .services__wrapper {
+  overflow-x: hidden;
   position: absolute;
-  top: 1050px;
-  right: calc(50% - 900px);
+  top: 50px;
+  right: calc(50% - 700px);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
 .services__card {
-  margin: 75px;
+  overflow-x: hidden;
+  margin: 25px;
   height: 425px;
   width: 300px;
   border-radius: 10px;
@@ -230,6 +247,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .services__card:nth-child(2) {
+  overflow-x: hidden;
   background: #1fa2ff;
   background: -webkit-linear-gradient(to right,
       #a6ffcb,
@@ -243,6 +261,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .services__card:nth-child(3) {
+  overflow-x: hidden;
   background-image: linear-gradient(-225deg,
       #29445E 0%,
       #013566 29%,
@@ -251,76 +270,68 @@ a, a:hover, a:visited, a:active {
 }
 
 .services__card h2 {
+  overflow-x: hidden;
   text-align: center;
 }
 
 .services__card p {
+  overflow-x: hidden;
   text-align: center;
   margin-top: 24px;
   font-size: 20px;
 }
 
-.services__btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-}
 
-.services__card button {
-  color: #fff;
-  padding: 14px 24px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #131313;
-  font-size: 1rem;
-}
+
 
 .services__card button:hover {
+  overflow-x: hidden;
   cursor: pointer;
 }
 
 .services__card:hover {
+  overflow-x: hidden;
   transform: scale(1.075);
   transition: 0.3s ease-in;
   cursor: pointer;
 }
 
 .picture_1{
-
+  overflow-x: hidden;
   position: absolute;
-  top: 1300px;
-  right: calc(50% + 550px);
+  top: 250px;
+  right: calc(50% + 400px);
 }
 
 .picture_2{
-
+  overflow-x: hidden;
   position: absolute;
-  top: 1345px;
-  right: calc(50% + 150px);
+  top: 280px;
+  right: calc(50% + 100px);
 }
 
 .picture_3{
-
+  overflow-x: hidden;
   position: absolute;
-  top: 1350px;
-  right: calc(50% - 300px);
+  top: 280px;
+  right: calc(50% - 250px);
 }
 
 .picture_4{
-
+  overflow-x: hidden;
   position: absolute;
-  top: 1340px;
-  right: calc(50% - 750px);
+  top: 280px;
+  right: calc(50% - 600px);
 }
 
 
 
 .services_backround{
+  overflow-x: hidden;
   position: absolute;
   top: 980px;
   right: 20px;
-  height: 750px;
+  height: 600px;
   width: calc(100% - 40px);
   
   display: flex;
@@ -332,7 +343,201 @@ a, a:hover, a:visited, a:active {
  
 }
 
+@media screen and (max-width: 1400px) {
+  .services__card {
+
+  margin: 15px;
+  height: 425px;
+  width: 250px;
+
+  }
+
+  .services__wrapper {
+    overflow-x: hidden;
+    position: absolute;
+    top: 50px;
+    right: calc(50% - 550px);
+
+  }
+
+  .picture_1{
+    overflow-x: hidden;
+    position: absolute;
+    top: 250px;
+    right: calc(50% + 330px);
+  }
+  
+  .picture_2{
+    overflow-x: hidden;
+    position: absolute;
+    top: 280px;
+    right: calc(50% + 80px);
+  }
+  
+  .picture_3{
+    overflow-x: hidden;
+    position: absolute;
+    top: 280px;
+    right: calc(50% - 200px);
+  }
+  
+  .picture_4{
+    overflow-x: hidden;
+    position: absolute;
+    top: 280px;
+    right: calc(50% - 485px);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .services__card {
+
+  margin: 5px;
+  height: 425px;
+  width: 200px;
+
+  }
+
+  .services__wrapper {
+    overflow-x: hidden;
+    position: absolute;
+    top: 50px;
+    right: calc(50% - 425px);
+
+  }
+
+  .picture_1{
+    overflow-x: hidden;
+    position: absolute;
+    top: 250px;
+    right: calc(50% + 185px);
+    width: 225px;
+  }
+  
+  .picture_2{
+    overflow-x: hidden;
+    position: absolute;
+    top: 280px;
+    right: calc(50% + 25px);
+  }
+  
+  .picture_3{
+    overflow-x: hidden;
+    position: absolute;
+    top: 280px;
+    right: calc(50% - 185px);
+  }
+  
+  .picture_4{
+    overflow-x: hidden;
+    position: absolute;
+    top: 280px;
+    right: calc(50% - 400px);
+  }
+
+  .Who_am_I {
+    overflow-x: hidden;
+    padding-right: 50px;
+    position: absolute;
+    top: 2125px;
+    right: calc(50% - 375px);
+    font-size: 2rem;
+  
+    color: white;
+  
+    background-image: linear-gradient(45deg, #fc00ff, #297AA6, #0F345C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .Who_am_I_txt {
+    overflow-x: visible;
+    padding-right: 70px;
+    position: absolute;
+    top: 2225px;
+    right: calc(50% - 610px);
+    font-size: 1.5rem;
+  }
+  
+  .About_1_Rahmen {
+    overflow-x: hidden;
+    padding-left: 50px;
+    position: absolute;
+    top: 2100px;
+    right: calc(50% + 70px);
+    margin: 10px;
+    height: 350px;
+    width: 350px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  }
+  
+  .About_1_Bild {
+    overflow-x: hidden;
+    padding-left: 50px;
+    position: absolute;
+    top: 2200px;
+    right: calc(50% + 15px);
+  }
+  
+  .About_2_Rahmen {
+    overflow-x: hidden;
+    position: absolute;
+    top: 2860px;
+    right: calc(50% - 540px);
+    margin: 10px;
+    height: 450px;
+    width: 450px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  }
+  
+  .About_2_Bild {
+    overflow-x: hidden;
+    position: absolute;
+    top: 2900px;
+    right: calc(50% - 500px);
+  }
+  
+  .What_do_I_do {
+    overflow-x: hidden;
+    position: absolute;
+    top: 2875px;
+    right: calc(52% + 100px);
+    font-size: 2.0rem;
+  
+    color: white;
+  
+    background-image: linear-gradient(45deg, #fc00ff, #297AA6, #0F345C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .What_do_I_do_txt {
+    overflow-x: hidden;
+    padding-left: 80px;
+    position: absolute;
+    top: 3000px;
+    right: calc(50% - 50px);
+    font-size: 1.5rem;
+  }
+
+
+
+}
+
+
+
 .about_linie_0{
+  overflow-x: hidden;
   position: absolute;
   top: 1775px;
   right: 60px;
@@ -345,6 +550,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .about_linie_1{
+  overflow-x: hidden;
     position: absolute;
     top: 2675px;
     right: 60px;
@@ -357,6 +563,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .about_linie_2{
+  overflow-x: hidden;
   position: absolute;
   top: 3475px;
   right: 60px;
@@ -370,6 +577,7 @@ a, a:hover, a:visited, a:active {
 
 
 .About__Header {
+  overflow-x: hidden;
   position: absolute;
   top: 1850px;
   right: calc(50% - 150px);
@@ -379,6 +587,8 @@ a, a:hover, a:visited, a:active {
 }
 
 .Who_am_I {
+  overflow-x: hidden;
+  padding-right: 50px;
   position: absolute;
   top: 2125px;
   right: calc(50% - 375px);
@@ -392,6 +602,8 @@ a, a:hover, a:visited, a:active {
 }
 
 .Who_am_I_txt {
+  overflow-x: visible;
+  padding-right: 70px;
   position: absolute;
   top: 2225px;
   right: calc(50% - 610px);
@@ -399,11 +611,11 @@ a, a:hover, a:visited, a:active {
 }
 
 .About_1_Rahmen {
-
-
+  overflow-x: hidden;
+  padding-left: 50px;
   position: absolute;
   top: 2100px;
-  right: calc(50% + 110px);
+  right: calc(50% + 70px);
   margin: 10px;
   height: 450px;
   width: 450px;
@@ -416,18 +628,19 @@ a, a:hover, a:visited, a:active {
 }
 
 .About_1_Bild {
+  overflow-x: hidden;
+  padding-left: 50px;
   position: absolute;
   top: 2200px;
-  right: calc(50% + 40px);
+  right: calc(50% + 15px);
 }
 
 .About_2_Rahmen {
-
-
+  overflow-x: hidden;
   position: absolute;
-  top: 2800px;
-  right: calc(50% - 540px);
-  margin: 10px;
+  top: 2975px;
+  right: calc(50% - 500px);
+  margin: -20px;
   height: 450px;
   width: 450px;
   border-radius: 8px;
@@ -439,15 +652,18 @@ a, a:hover, a:visited, a:active {
 }
 
 .About_2_Bild {
+  overflow-x: hidden;
   position: absolute;
-  top: 2835px;
+  top: 2985px;
   right: calc(50% - 500px);
 }
 
 .What_do_I_do {
+  overflow-x: hidden;
   position: absolute;
+  padding-left: 40px;
   top: 2875px;
-  right: calc(50% + 250px);
+  right: calc(50% + 200px);
   font-size: 2.0rem;
 
   color: white;
@@ -458,15 +674,18 @@ a, a:hover, a:visited, a:active {
 }
 
 .What_do_I_do_txt {
+  overflow-x: hidden;
+  padding-left: 40px;
   position: absolute;
   top: 3000px;
-  right: calc(50% - 0px);
+  right: calc(50% - 50px);
   font-size: 1.5rem;
 }
 
 
 
 .divider_1 {
+  overflow-x: hidden;
   position: absolute;
   top: 3750px;
   right: 0px;
@@ -478,6 +697,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .divider_2 {
+  overflow-x: hidden;
   position: absolute;
   top: 6300px;
   right: 0px;
@@ -492,6 +712,7 @@ a, a:hover, a:visited, a:active {
 
 
 .background_2{
+  overflow-x: hidden;
   position: absolute;
   top: 4099px;
   right: 0px;
@@ -503,28 +724,30 @@ a, a:hover, a:visited, a:active {
 }
 
 .First_Box_text{
-
+  overflow-x: hidden;
   position: absolute;
-  top: 4450px;
-  right: calc(50% - 190px);
+  top: 50px;
+  right: calc(50% - 240px);
   font-size: 2.2rem;
   color: white;
   font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .First_Box_text_2{
-
+  overflow-x: hidden;
+  top: 10px;
   position: absolute;
-  top: 4550px;
-  right: calc(50% - 35px);
+  right: calc(50% - 95px);
   color: #ffffff;
   
   font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .First_Box_text_3{
+  overflow-x: hidden;
+  padding-right: calc(-5% + 200px);
   position: absolute;
-  top: 4720px;
+  top: 290px;
   right: calc(50% - 625px);
   color: #ffffff;
   font-size: larger;
@@ -535,20 +758,22 @@ a, a:hover, a:visited, a:active {
 
 
 .Box_Image{
+  overflow-x: hidden;
+  top: -90px;
   position: absolute;
-  top: 4325px;
   right: calc( 50% - 300px);
 }
 
 
 .First_Box{
-
+  overflow-x: hidden;
+  overflow-y: hidden;
   position: absolute;
   top: 4400px;
-  right: calc(50% - 890px);
+  right: calc(2.35% - 55px);
   margin: 40px;
   height: 750px;
-  width: 1650px;
+  width: 96.4%;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -572,37 +797,38 @@ a, a:hover, a:visited, a:active {
 
 
 .Second_Box_text{
-
+  overflow-x: hidden;
   position: absolute;
-  top: 5250px;
-  right: calc(50% + 165px);
+  top: 50px;
+  right: calc(50% - 215px);
   font-size: 2.2rem;
 }
 
 .Second_Box_text_2{
-
+  overflow-x: hidden;
   position: absolute;
-  top: 5325px;
-  right: calc(50% + 225px);
+  top:125px;
+  right: calc(50% - 175px);
   color: #000000;
 
 }
 
 .Second_Box_Image{
+  overflow-x: hidden;
   position: absolute;
-  top: 5325px;
-  right: calc(50% - 200px);
+  top: 100px;
+  right: calc(50% - 620px);
 }
 
 
 .Second_Box{
-
+  overflow-x: hidden;
   position: absolute;
   top: 5200px;
-  right: calc(50% - 50px);
+  right: calc(51.6% - 50px);
   margin: 40px;
   height: 810px;
-  width: 810px;
+  width: 47%;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -624,42 +850,40 @@ a, a:hover, a:visited, a:active {
 
 
 .Third_Box_text{
-
+  overflow-x: hidden;
   position: absolute;
-  top: 5250px;
-  right: calc(50% - 550px);
+  top: 50px;
+  right: calc(50% - 100px);
   font-size: 2.2rem;
 }
 
 .Third_Box_text_2{
-
+  overflow-x: hidden;
   position: absolute;
-  top: 5325px;
-  right: calc(50% - 570px);
+  top: 120px;
+  right: calc(50% - 120px);
   color: #000000;
 
 }
 
 .Third_Box_Image{
+  overflow-x: hidden;
   position: absolute;
-  top: 5420px;
-  right: calc(50% - 725px);
+  top: 200px;
+  right: calc(50% - 280px);
   border-radius: 20px;
+  
 }
 
 
-
-
-
-
 .Third_Box{
-
+  overflow-x: hidden;
   position: absolute;
   top: 5200px;
-  right: calc(50% - 890px);
+  right: calc(2.5% - 55px);
   margin: 40px;
   height: 810px;
-  width: 810px;
+  width: 47%;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -681,19 +905,8 @@ a, a:hover, a:visited, a:active {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .Work_Rahmen {
+  overflow-x: hidden;
   position: absolute;
   top: 7000px;
   right: calc(50% - 100px);
@@ -709,7 +922,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .Work__Headline {
-
+  overflow-x: hidden;
   position: absolute;
   top: 7100px;
   right: calc(50% - 475px);
@@ -724,7 +937,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .Work__Headline_2 {
-
+  overflow-x: hidden;
   position: absolute;
   top: 7175px;
   right: calc(50% - 540px);
@@ -736,6 +949,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .main__btn {
+  overflow-x: hidden;
   font-size: 1.8rem;
   background: white;
   background: -webkit-linear-gradient(to right, #011640, #010D26, #fc00ff);
@@ -755,20 +969,19 @@ a, a:hover, a:visited, a:active {
 
 
 .main__btn:hover {
+  overflow-x: hidden;
   cursor: pointer;
 }
 
 .main__btn:hover {
+  overflow-x: hidden;
   transform: scale(1.075);
   transition: 0.3s ease-in;
   cursor: pointer;
 }
 
-
-
-
 .resume__btn{
-
+  overflow-x: hidden;
   font-size: 1.8rem;
   background: white;
   background: -webkit-linear-gradient(to right, #011640, #010D26, #fc00ff);
@@ -786,10 +999,12 @@ a, a:hover, a:visited, a:active {
 }
 
 .resume__btn:hover {
+  overflow-x: hidden;
   cursor: pointer;
 }
 
 .resume__btn:hover {
+  overflow-x: hidden;
   transform: scale(1.075);
   transition: 0.3s ease-in;
   cursor: pointer;
@@ -797,6 +1012,7 @@ a, a:hover, a:visited, a:active {
 
 
 .Work__Header {
+  overflow-x: hidden;
   position: absolute;
   top: 6850px;
   right: calc(50% - 40px);
@@ -804,73 +1020,70 @@ a, a:hover, a:visited, a:active {
   color: white;
 }
 
-
-.Images_bottom {
-
-  position: absolute;
-  top: 8500px;
-  right: 600px;
+.footer__container {
+  background-color: #131313;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer_background {
+#footer__logo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
 
-  background-color: black;
+.footer__links {
   width: 100%;
-  height: 150px;
-  position: absolute;
-  top: 7800px;
-  right: 0px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__link--wrapper {
+  display: flex;
+}
+
+.footer__link--items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+}
+
+.footer__link--items h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+
+.social__media {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.social__media--wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto 0 auto;
+}
+
+.website__rights {
+  color: #fff;
 }
 
 
 
-.footer_name {
-  position: absolute;
-  top: 7860px;
-  right: calc(85%);
-  font-size: 2rem;
-}
 
 
-.footer_rights {
-  position: absolute;
-  top: 7860px;
-  right: calc(50% - 100px);
-  font-size: 2rem;
-}
-
-.links {
-
-  position: absolute;
-  top: 7840px;
-  right: calc(02%);
-  font-size: 2rem;
-}
-
-/*
-.Footer__Main{
-background-color: transparent;
-  border:none;
-  position: absolute;
-  top: 65px;
-  right: calc(50% + 1175px);
-  font-size: 1rem; 
-}
-
-.Footer__Repository{
-  background-color: transparent;
-    border:none;
-    position: absolute;
-    top: 87px;
-    right: calc(50% + 1128px);
-    font-size: 1rem; 
-  }
-
-.Footer__Conatact{
-    background-color: transparent;
-      border:none;
-      position: absolute;
-      top: 110px;
-      right: calc(50% + 1150px);
-      font-size: 1rem; 
-    }*/
