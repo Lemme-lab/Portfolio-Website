@@ -36,21 +36,22 @@ body {
 }
 
 .work .still_in_work h1 {
-    position: absolute;
-    top: -170px;
-    right: -110px;
-    font-family: 'Josefin Sans', sans-serif;
-      color: #222;
-      font-size: 180px;
-      letter-spacing: 10px;
-      margin: 0px;
-      font-weight: 700;
-      text-shadow: 2px 2px 0px #c9c9c9, -2px -2px 0px #c9c9c9;
-    }
+  position: absolute;
+  top: -170px;
+  right: -110px;
+  font-family: 'Josefin Sans', sans-serif;
+    color: #222;
+    font-size: 180px;
+    letter-spacing: 10px;
+    margin: 0px;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px #c9c9c9, -2px -2px 0px #c9c9c9;
+  }
 
 .work .still_in_work h1>span {
   text-shadow: 2px 2px 0px #1199c2, -2px -2px 0px #09e3eb, 0px 0px 8px #1c9ce6;
 }
+
 
 .work p {
   font-family: 'Josefin Sans', sans-serif;

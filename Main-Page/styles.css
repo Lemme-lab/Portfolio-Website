@@ -161,7 +161,6 @@ a, a:hover, a:visited, a:active {
   right: calc(50% - 405px);
   font-size: 1.8em;
   color: white;
-
 }
 
 .Text_1 {
@@ -276,11 +275,6 @@ a, a:hover, a:visited, a:active {
   margin-top: 24px;
   font-size: 20px;
 }
-
-
-
-
-
 
 .services__card:hover {
   overflow-x: hidden;
@@ -413,9 +407,11 @@ a, a:hover, a:visited, a:active {
   overflow-x: hidden;
   position: absolute;
   top: 1850px;
-  right: calc(50% - 150px);
-  font-size: 3rem;
-  color: white;
+  right: calc(50% - 200px);
+  font-size: 4rem;
+  color: #1a1818;
+  text-shadow: 2px 2px 0px #1199c2, -2px -2px 0px #09e3eb, 0px 0px 8px #1c9ce6;
+ 
 
 }
 
@@ -495,7 +491,7 @@ a, a:hover, a:visited, a:active {
   overflow-x: hidden;
   position: absolute;
   padding-left: 40px;
-  top: 2875px;
+  top: 2950px;
   right: calc(50% + 200px);
   font-size: 2.0rem;
 
@@ -510,7 +506,7 @@ a, a:hover, a:visited, a:active {
   overflow-x: hidden;
   padding-left: 40px;
   position: absolute;
-  top: 3000px;
+  top: 3075px;
   right: calc(50% - 50px);
   font-size: 1.5rem;
 }
@@ -828,14 +824,14 @@ a, a:hover, a:visited, a:active {
   cursor: pointer;
 }
 
-
 .Work__Header {
   overflow-x: hidden;
   position: absolute;
   top: 6850px;
   right: calc(50% - 50px);
   font-size: 3rem;
-  color: white;
+  color: #1a1818;
+  text-shadow: 2px 2px 0px #1199c2, -2px -2px 0px #09e3eb, 0px 0px 8px #1c9ce6;
 }
 
 .footer__container {
