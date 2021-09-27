@@ -1,0 +1,562 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "font-family: Tahoma, sans-serif";
+    scroll-behavior: smooth;
+    overflow-y: visible;
+    overflow-x: hidden;
+  
+  }
+  
+  
+  a, a:hover, a:visited, a:active {
+    overflow-x: hidden;
+    color: white;
+    text-decoration: none;
+   }
+  
+  .navbar {
+    overflow-x: hidden;
+    background: #0D0D0D;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+  }
+  
+  .navbar__container {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: -50%;
+    max-width: 3000px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  .navbar__menu {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .navbar__item {
+    overflow-x: hidden;
+    height: 80px;
+  }
+  
+  .navbar__links {
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    overflow-x: hidden;
+    color: #36A0D9;
+    transition: all 0.3s ease;
+  }
+  
+  #stack {
+    overflow-x: hidden;
+    position: absolute;
+    top: 10px;
+    right: 80px;
+  }
+  
+  #engineer {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+    right: 160px;
+  }
+  
+  #twitter {
+    overflow-x: hidden;
+    position: absolute;
+    top: 15px;
+    right: 260px;
+  }
+  
+  
+  .Main {
+    overflow-x: hidden;
+    padding: auto;
+    width: auto;
+    height: 3850px;
+    background: linear-gradient(45deg, #000000, #141414, #1C1919, #191716);
+  }
+
+
+  .Picture_Headline{
+    position: absolute;
+    top: 80px;
+    right: calc(50% - 275px);
+  }
+
+  .container{
+    position: absolute;
+    top: 190px;
+    right: calc(50% - 1030px);
+    width: 1580px;
+    overflow:hidden;
+    display:block;
+    height: 660px;
+}
+
+
+.Picture_Frame{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    height: 700px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: "4907157.jpg";
+    background-color: rgb(255, 255, 255);
+  }
+
+  .linie_0{
+    overflow-x: hidden;
+    position: absolute;
+    top: 875px;
+    right: 60px;
+    height: 10px;
+    width: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: white;
+  }
+
+  .linie_1{
+    overflow-x: hidden;
+    position: absolute;
+    top: 1825px;
+    right: 60px;
+    height: 10px;
+    width: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: white;
+  }
+
+  .linie_2{
+    overflow-x: hidden;
+    position: absolute;
+    top: 3225px;
+    right: 60px;
+    height: 10px;
+    width: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: white;
+  }
+
+
+  .Project_Head_1{
+    position: absolute;
+    top: 1150px;
+    right: calc(50% - 600px);
+    margin: 10px;
+    overflow-x: hidden;
+    position: absolute;
+    font-size: 2.5rem;
+    color: #ffffff;
+
+  }
+
+
+  .Project_box{
+    overflow-x: hidden;
+    padding-left: 50px;
+    position: absolute;
+    top: 1100px;
+    right: calc(50% + 70px);
+    margin: 10px;
+    height: 550px;
+    width: 550px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #fcfdfd 0%, #ffffff 100%);
+  }
+
+
+ 
+
+  .Project_Text{
+    position: absolute;
+    top: 1300px;
+    right: calc(50% - 540px);
+    font-size: 2.1rem;
+    color: white;
+    width: 490px;
+    height: 330px;
+    text-align: justify;
+  }
+
+
+  .Project_box_pcb{
+    position: absolute;
+    top: 1925px;
+    right: calc(50% + 250px);
+    margin: 10px;
+    height: 650px;
+    width: 350px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #fcfdfd 0%, #ffffff 100%);
+  }
+
+.Project_box_AI_Code{
+    position: absolute;
+    top: 1925px;
+    right: calc(50% - 200px);
+    margin: 10px;
+    height: 650px;
+    width: 350px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #fcfdfd 0%, #ffffff 100%);
+}
+
+.Project_box_code{
+    position: absolute;
+    top: 1925px;
+    right: calc(50% - 650px);
+    margin: 10px;
+    height: 650px;
+    width: 350px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #fcfdfd 0%, #ffffff 100%);
+}
+
+/*css/style.css */
+
+.slider{
+	margin:50px auto;
+	width:50%;
+}
+
+
+.btn{
+    top: 295px;
+    right: calc(50% + 115px);
+    position: absolute;
+	border:none;
+	outline:none;
+	background:rgba(136, 136, 136, 0);
+	padding:10px 30px;
+	font-size: 50px;
+	color:rgb(148, 148, 148);
+	cursor: pointer;
+	margin:10px auto;			 
+}
+
+.btn_1{
+    position: absolute;
+    top: 295px;
+    right: calc(50% - 200px);
+	border:none;
+	outline:none;
+	background:rgba(136, 136, 136, 0);
+	padding:10px 30px;
+	font-size: 50px;
+	color:rgb(148, 148, 148);
+	cursor: pointer;
+	margin:10px auto;			 
+}
+
+.img-box img{
+    position: absolute;
+    top: 150px;
+    right: calc(50% - 555px);
+	width:320%;
+}
+
+.AI_code{
+color: black;
+
+
+}
+
+.mbot_img{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+    right: calc(50% - 250px);
+	width:90%;
+}
+
+.mBot_PCB_Header{
+    position: absolute;
+    top: 2750px;
+    right: calc(50% + 325px);
+    margin: 10px;
+    overflow-x: hidden;
+    position: absolute;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.mBot_PCB_Text{
+    position: absolute;
+    top: 2900px;
+    right: calc(50% + 230px);
+    font-size: 2.1rem;
+    color: white;
+    width: 390px;
+    height: 330px;
+    text-align: justify;
+}
+
+.mBot_AI_Header{
+    position: absolute;
+    top: 2750px;
+    right: calc(50% - 125px);
+    margin: 10px;
+    overflow-x: hidden;
+    position: absolute;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.mBot_AI_Text{
+    position: absolute;
+    top: 2900px;
+    right: calc(50% - 230px);
+    font-size: 2.1rem;
+    color: white;
+    width: 390px;
+    height: 330px;
+    text-align: justify;
+}
+
+
+.mBot_Code_Header{
+    position: absolute;
+    top: 2750px;
+    right: calc(50% - 595px);
+    margin: 10px;
+    overflow-x: hidden;
+    position: absolute;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.mBot_Code_Text{
+    position: absolute;
+    top: 2900px;
+    right: calc(50% - 640px);
+    font-size: 2.1rem;
+    color: white;
+    width: 330px;
+    height: 390px;
+    text-align: justify;
+}
+
+.mBot_toDO_Box{
+    position: absolute;
+    border-radius: 8px;
+    top: 3350px;
+    right: calc(50% + 100px);
+    height: 425px;
+    width: calc(27% );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: "4907157.jpg";
+    background-color: rgb(255, 255, 255);
+}
+
+.mBot_toDO_Head{
+    position: absolute;
+    top: 3375px;
+    right: calc(50% + 225px);
+    margin: 10px;
+    overflow-x: hidden;
+    position: absolute;
+    font-size: 3rem;
+    color: #000000;
+}
+
+.mBot_toDO_list{
+    position: absolute;
+    top: 3475px;
+    right: calc(50% + 95px);
+    margin: 10px;
+    overflow-x: hidden;
+    position: absolute;
+    font-size: 2.35rem;
+    color: #000000;
+}
+
+
+.main__btn {
+    
+    overflow-x: hidden;
+    font-size: 1.8rem;
+    background: rgb(53, 51, 51);
+    padding: 20px 90px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3400px;
+    right: calc(50% - 325px);
+    transition: all 0.35s;
+    outline: none;
+    
+  }
+
+  .resume__btn{
+ 
+    overflow-x: hidden;
+    font-size: 1.8rem;
+    background: rgb(53, 51, 51);
+    padding: 20px 90px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3500px;
+    right: calc(50% - 325px);
+    transition: all 0.35s;
+    outline: none;
+  }
+
+  .footer__container {
+    background-color: #131313;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #footer__logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__link--wrapper {
+    display: flex;
+  }
+  
+  .footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+  }
+  
+  .footer__link--items h2 {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  
+  .social__media {
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto 0 auto;
+  }
+  
+  .website__rights {
+    color: #fff;
+  }
+  
+
+  .main__btn:hover {
+    overflow-x: hidden;
+    cursor: pointer;
+  }
+  
+  .main__btn:hover {
+    overflow-x: hidden;
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .resume__btn:hover {
+    overflow-x: hidden;
+    cursor: pointer;
+  }
+  
+  .resume__btn:hover {
+    overflow-x: hidden;
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
