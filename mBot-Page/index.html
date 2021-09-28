@@ -64,7 +64,7 @@
 
             <div class="container">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                <video class="myvideos"  loop="" src="ezgif.com-gif-maker (7).mp4" width = 1100px height = auto alt=""></video>
+                <video class="myvideos"  loop="" src="ezgif.com-gif-maker (8).mp4" width = 1040px height = auto alt=""></video>
               </div>
 
             <div class = Picture_Headline>
@@ -85,7 +85,7 @@
             </div>
 
             <div class = Project_box>
-                    <img src="48046d39-a1cf-4db4-bdfb-1cb26cd3c92b.png" height="320px" class="mbot_img">           
+                    <img src="b67579f2-5860-42c2-99bc-4adb46e76acc.png" height="340px" class="mbot_img">           
                 
             </div>
 
@@ -96,8 +96,9 @@
                 PI with PI-Cam to power me</p>
                 <a id="pcb"></a>
             </div>
+     
 
-          
+
             <div class = Project_box_pcb>
 
                 <div class="slider">
@@ -110,19 +111,178 @@
                     <button class="btn_1" onclick="next()">></button>
                     
             </div>
-            
-
-            <a href="https://github.com/Lemme-lab/mBot_KI/blob/master/mBot_KI.ipynb">
+               
             <div class = Project_box_AI_Code>
-                <img src="Code_1.png" width="400" height="600"> 
-                <img src="Code_2.png" width="400" height="600">
-                <img src="Code_3.png" width="400" height="100">
-            </div>
-            </a>
+<pre>
+    import pandas as pd
+import numpy as np
+import os, sys
+from IPython.display import display
+from IPython.display import Image as _Imgdis
+from PIL import Image
+from numpy import asarray
+from matplotlib import image
+from matplotlib import pyplot
 
-            <div class = Project_box_code>
-                <img src="Code_4.png" width="550" height="650"> 
+
+blocked_X = [f for f in os.listdir("DataSet/Blocked") if os.path.isfile(os.path.join("DataSet/Blocked", f))]
+print("Working with {0} images".format(len(blocked_X)))
+blocked_Y = len(blocked_X)
+
+free_X = [f for f in os.listdir("DataSet/Free") if os.path.isfile(os.path.join("DataSet/Free", f))]
+print("Working with {0} images".format(len(free_X)))
+free_Y = len(free_X)
+
+
+
+for x in range (0,(len(blocked_X))):
+    blocked_Y = [0] * len(blocked_X)
+    name = blocked_X[x]
+    image = Image.open("DataSet/Blocked" + "/" + name)
+    #display(_Imgdis(filename= "DataSet/Blocked" + "/" + blocked_X[x], width=240, height=320))
+    blocked_X[x] = asarray(image)
+    #print(blocked_X[x].shape)
+    #print(blocked_Y[x])
+    
+    
+for x in range (0,(len(free_X))):
+    free_Y = [1] * len(free_X)
+    name = free_X[x]
+    image = Image.open("DataSet/free" + "/" + name)
+    #display(_Imgdis(filename= "DataSet/free" + "/" + free_X[x], width=240, height=320))
+    free_X[x] = asarray(image)
+    #print(blocked_X[x].shape)
+    #print(free_Y[x])
+    
+    
+dataset_X = np.concatenate([blocked_X, free_X])
+dataset_Y = np.concatenate([blocked_Y, free_Y])
+
+from keras.models import Sequential
+from keras.layers import Dense, Flatten,Conv2D , MaxPooling2D, Dropout
+import tensorflow as tf
+
+model = Sequential()
+
+model.add(Conv2D(32, kernel_size=(3, 3), input_shape=(224, 224, 3), activation="relu", padding="same"))
+model.add(Conv2D(32, kernel_size=(3, 3), activation="relu", padding="same"))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(64, kernel_size=(3, 3), activation="relu", padding="same"))
+model.add(Conv2D(64, kernel_size=(3, 3), activation="relu", padding="same"))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(64, kernel_size=(3, 3), activation="relu", padding="same"))
+model.add(Conv2D(64, kernel_size=(3, 3), activation="relu", padding="same"))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(128, kernel_size=(3, 3), activation="relu", padding="same"))
+model.add(Conv2D(128, kernel_size=(3, 3), activation="relu", padding="same"))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Flatten())
+model.add(Dense(256, activation="relu"))
+model.add(Dense(128, activation="relu"))
+model.add(Dense(64, activation="relu"))
+model.add(Dense(32, activation="relu"))
+model.add(Dense(16, activation="relu"))
+model.add(Dense( 2, activation="softmax"))
+
+model.compile(optimizer='RMSProp', loss="sparse_categorical_crossentropy", metrics=['accuracy'])
+model.summary() 
+
+checkpoint_path = "cp.ckpt"
+checkpoint_dir = os.path.dirname(checkpoint_path)
+cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=checkpoint_path,
+                                                 save_weights_only=True,
+                                                 verbose=1)
+
+model.fit(dataset_X, dataset_Y,batch_size=32, epochs=43, shuffle = True, callbacks=[cp_callback])
+
+model.evaluate(dataset_X, dataset_Y)
+results = model.predict(dataset_X[40].reshape(-1, 224, 224, 3))
+model.save("mBot_KI.hdf5")
+print(results)
+
+
+dataset_Y
+dataset_X
+</pre>
             </div>
+    
+            <div class = Project_box_code>
+                <pre>
+                    from picamera import PiCamera
+                    from keras.models import load_model
+                    import numpy as np
+                    import random
+                    import numpy as np
+                    import os, sys
+                    from IPython.display import display
+                    from IPython.display import Image as _Imgdis
+                    from PIL import Image
+                    from numpy import asarray
+                    from matplotlib import image
+                    from matplotlib import pyplot
+                    
+                    #import RPi.GPIO as GPIO
+                    
+                    M1 = 23
+                    M2 = 19 
+                    #GPIO.setmode(GPIO.BOARD)
+                     
+                    GPIO.setup(M1, GPIO.OUT)
+                    GPIO.setup(M2, GPIO.OUT)
+                    
+                    model = load_model('mBot_KI.hdf5')
+                    
+                    i = 0
+                    
+                    
+                    while i != 1:
+                        
+                     
+                        camera.start_preview()
+                        camera.capture('/home/pi/Desktop/image%s.jpg')
+                        camera.stop_preview()
+                        
+                        image = Image.open('/home/pi/Desktop/image%s.jpg')
+                        #image = Image.open("DataSet/Blocked/05199562-694f-11e9-86df-72b5f773b75d.jpg")
+                        image_data = asarray(image)
+                        results = model.predict(image_data.reshape(-1, 224, 224, 3))
+                        index_max = np.argmax(results)
+                        print(index_max)
+                        
+                        n = random.randint(1,2)
+                    
+                        
+                        if((index_max == 0) and (n == 1)):
+                            Drive Left
+                            GPIO.output(M1, False)
+                            GPIO.output(M2, True)
+                            print("left")
+                           
+                        
+                        if((index_max == 0) and (n == 2)):
+                            Drive Left
+                            GPIO.output(M1, True)
+                            GPIO.output(M2, False)
+                            print("right")
+                                
+                        if(index_max == 1):
+                            Drive Straight
+                            GPIO.output(M1, True)
+                            GPIO.output(M2, True)
+                            print("straight")
+                            
+
+                </pre>
+            </div>
+
 
 
             <div class = mBot_PCB_Header>mBot-PCB</div>

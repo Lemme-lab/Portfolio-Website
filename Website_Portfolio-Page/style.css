@@ -6,7 +6,6 @@
     scroll-behavior: smooth;
     overflow-y: visible;
     overflow-x: hidden;
-  
   }
   
   
@@ -112,7 +111,7 @@
     overflow-x: hidden;
     padding: auto;
     width: auto;
-    height: 3850px;
+    height: 2750px;
     background: linear-gradient(45deg, #000000, #141414, #1C1919, #191716);
   }
 
@@ -125,9 +124,10 @@
 
   .container{
     position: absolute;
-    top: 190px;
-    right: calc(50% - 1080px);
+    top: 220px;
+    right: calc(50% - 1340px);
     width: 1580px;
+    border-radius: 8px;
     overflow:hidden;
     display:block;
     height: 660px;
@@ -163,7 +163,7 @@
   .linie_1{
     overflow-x: hidden;
     position: absolute;
-    top: 1825px;
+    top: 1725px;
     right: 60px;
     height: 10px;
     width: calc(100% - 160px);
@@ -176,7 +176,7 @@
   .linie_2{
     overflow-x: hidden;
     position: absolute;
-    top: 3225px;
+    top: 2600px;
     right: 60px;
     height: 10px;
     width: calc(100% - 160px);
@@ -186,55 +186,10 @@
     background-color: white;
   }
 
-
-  .Project_Head_1{
-    position: absolute;
-    top: 1150px;
-    right: calc(50% - 600px);
-    margin: 10px;
-    overflow-x: hidden;
-    position: absolute;
-    font-size: 2.5rem;
-    color: #ffffff;
-
-  }
-
-
-  .Project_box{
-    overflow-x: hidden;
-    padding-left: 50px;
-    position: absolute;
-    top: 1100px;
-    right: calc(50% + 70px);
-    margin: 10px;
-    height: 550px;
-    width: 550px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    background-image: linear-gradient(to right, #fcfdfd 0%, #ffffff 100%);
-  }
-
-
- 
-
-  .Project_Text{
-    position: absolute;
-    top: 1300px;
-    right: calc(50% - 540px);
-    font-size: 2.1rem;
-    color: white;
-    width: 490px;
-    height: 330px;
-    text-align: justify;
-  }
-
-
   .Project_box_pcb{
+    overflow-x: visible;
     position: absolute;
-    top: 1925px;
+    top: 975px;
     right: calc(50% + 250px);
     margin: 10px;
     height: 650px;
@@ -247,9 +202,22 @@
     background-image: linear-gradient(to right, #fcfdfd 0%, #ffffff 100%);
   }
 
+
+  pre {
+    overflow-y: auto;
+    overflow-x: visible;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    background: linear-gradient(#333232, #292828) 8px 8px/calc(100% - 16px) calc(100% - 16px) no-repeat;
+  }
+
+
+
+
 .Project_box_AI_Code{
     position: absolute;
-    top: 1925px;
+    top: 975px;
     right: calc(50% - 200px);
     margin: 10px;
     height: 650px;
@@ -264,7 +232,7 @@
 
 .Project_box_code{
     position: absolute;
-    top: 1925px;
+    top: 975px;
     right: calc(50% - 650px);
     margin: 10px;
     height: 650px;
@@ -277,175 +245,16 @@
     background-image: linear-gradient(to right, #fcfdfd 0%, #ffffff 100%);
 }
 
-/*css/style.css */
-
-.slider{
-	margin:50px auto;
-	width:50%;
+.background{
+  overflow-y: hidden;
+  position: absolute;
+  top: 1820px;
+  right: calc(50% - 530px);
+  margin: 10px;
+  height: 650px;
+  width: 995px;
+  background-color: white;
 }
-
-
-.btn{
-    top: 295px;
-    right: calc(50% + 115px);
-    position: absolute;
-	border:none;
-	outline:none;
-	background:rgba(136, 136, 136, 0);
-	padding:10px 30px;
-	font-size: 50px;
-	color:rgb(148, 148, 148);
-	cursor: pointer;
-	margin:10px auto;			 
-}
-
-.btn_1{
-    position: absolute;
-    top: 295px;
-    right: calc(50% - 200px);
-	border:none;
-	outline:none;
-	background:rgba(136, 136, 136, 0);
-	padding:10px 30px;
-	font-size: 50px;
-	color:rgb(148, 148, 148);
-	cursor: pointer;
-	margin:10px auto;			 
-}
-
-.img-box img{
-    position: absolute;
-    top: 150px;
-    right: calc(50% - 555px);
-	width:320%;
-}
-
-.AI_code{
-color: black;
-
-
-}
-
-.mbot_img{
-    overflow-y: hidden;
-    overflow-x: hidden;
-    position: absolute;
-    right: calc(50% - 250px);
-	width:90%;
-}
-
-.mBot_PCB_Header{
-    position: absolute;
-    top: 2750px;
-    right: calc(50% + 325px);
-    margin: 10px;
-    overflow-x: hidden;
-    position: absolute;
-    font-size: 3rem;
-    color: #ffffff;
-}
-
-.mBot_PCB_Text{
-    position: absolute;
-    top: 2900px;
-    right: calc(50% + 230px);
-    font-size: 2.1rem;
-    color: white;
-    width: 390px;
-    height: 330px;
-    text-align: justify;
-}
-
-.mBot_AI_Header{
-    position: absolute;
-    top: 2750px;
-    right: calc(50% - 125px);
-    margin: 10px;
-    overflow-x: hidden;
-    position: absolute;
-    font-size: 3rem;
-    color: #ffffff;
-}
-
-.mBot_AI_Text{
-    position: absolute;
-    top: 2900px;
-    right: calc(50% - 230px);
-    font-size: 2.1rem;
-    color: white;
-    width: 390px;
-    height: 330px;
-    text-align: justify;
-}
-
-
-.mBot_Code_Header{
-    position: absolute;
-    top: 2750px;
-    right: calc(50% - 595px);
-    margin: 10px;
-    overflow-x: hidden;
-    position: absolute;
-    font-size: 3rem;
-    color: #ffffff;
-}
-
-.mBot_Code_Text{
-    position: absolute;
-    top: 2900px;
-    right: calc(50% - 640px);
-    font-size: 2.1rem;
-    color: white;
-    width: 330px;
-    height: 390px;
-    text-align: justify;
-}
-
-.mBot_toDO_Box{
-    position: absolute;
-    border-radius: 8px;
-    top: 3350px;
-    right: calc(50% + 100px);
-    height: 425px;
-    width: calc(27% );
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: "4907157.jpg";
-    background-color: rgb(255, 255, 255);
-}
-
-.mBot_toDO_Head{
-    position: absolute;
-    top: 3375px;
-    right: calc(50% + 225px);
-    margin: 10px;
-    overflow-x: hidden;
-    position: absolute;
-    font-size: 3rem;
-    color: #000000;
-}
-
-.mBot_toDO_list{
-    position: absolute;
-    top: 3475px;
-    right: calc(50% + 95px);
-    margin: 10px;
-    overflow-x: hidden;
-    position: absolute;
-    font-size: 2.35rem;
-    color: #000000;
-}
-
-pre {
-  overflow-y: auto;
-  overflow-x: visible;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  background: linear-gradient(#333232, #292828) 8px 8px/calc(100% - 16px) calc(100% - 16px) no-repeat;
-}
-
 
 .main__btn {
     
@@ -458,29 +267,13 @@ pre {
     margin-top: 5rem;
     cursor: pointer;
     position: absolute;
-    top: 3400px;
-    right: calc(50% - 325px);
+    top: 2590px;
+    right: calc(50% - 200px);
     transition: all 0.35s;
     outline: none;
     
   }
 
-  .resume__btn{
- 
-    overflow-x: hidden;
-    font-size: 1.8rem;
-    background: rgb(53, 51, 51);
-    padding: 20px 90px;
-    border: none;
-    border-radius: 6px;
-    margin-top: 5rem;
-    cursor: pointer;
-    position: absolute;
-    top: 3500px;
-    right: calc(50% - 325px);
-    transition: all 0.35s;
-    outline: none;
-  }
 
   .footer__container {
     background-color: #131313;
