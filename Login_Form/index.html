@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="navbar__container">
+
+
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#header" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="Abilities">Abilities</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#about_me" class="navbar__links" id="About">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#work" class="navbar__links" id="services-page">My Work</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="stack_overflow" id="stack">
+            <a href="https://stackoverflow.com/users/14211553/schleichdie">
+                <img alt="" src="kisspng-stackoverflow-icon-5d3ff473d685e2.1313915615644724358787.png" width="50" height="50">
+            </a>
+        </div>
+
+        <div class="Electrical_engineer" id="engineer">
+            <a href="https://electronics.stackexchange.com/users/276102/schleichdie">
+                <img alt="" src="apple-touch-icon@2.png" width="70" height="70">
+            </a>
+        </div>
+
+        <div class="twitter" id="twitter">
+            <a href="https://twitter.com/NopeLemme">
+                <img alt="" src="Twitter_bird_logo_2012.svg.png" width="40" height="40">
+            </a>
+        </div>
+
+    </nav>
+  
+    <nav class="Main">
+
+        <form action="action_page.php" method="post">
+          
+            <div class="form_container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+
+
+        
+    </nav>
+
+
+
+
+</body>
+</html>
