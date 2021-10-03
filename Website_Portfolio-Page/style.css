@@ -1,110 +1,139 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "font-family: Tahoma, sans-serif";
-    scroll-behavior: smooth;
-    overflow-y: visible;
-    overflow-x: hidden;
-  }
-  
-  
-  a, a:hover, a:visited, a:active {
-    overflow-x: hidden;
-    color: white;
-    text-decoration: none;
-   }
-  
-  .navbar {
-    overflow-x: hidden;
-    background: #0D0D0D;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    overflow: hidden;
-  }
-  
-  .navbar__container {
-    overflow-x: hidden;
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    width: -50%;
-    max-width: 3000px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-  
-  .navbar__menu {
-    overflow-x: hidden;
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-  
-  .navbar__item {
-    overflow-x: hidden;
-    height: 80px;
-  }
-  
-  .navbar__links {
-    overflow-x: hidden;
-    color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 125px;
-    text-decoration: none;
-    height: 100%;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .button {
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #fff;
-    transition: all 0.3s ease;
-  }
-  
-  .navbar__links:hover {
-    overflow-x: hidden;
-    color: #36A0D9;
-    transition: all 0.3s ease;
-  }
-  
-  #stack {
-    overflow-x: hidden;
-    position: absolute;
-    top: 10px;
-    right: 80px;
-  }
-  
-  #engineer {
-    overflow-x: hidden;
-    position: absolute;
-    top: 0px;
-    right: 160px;
-  }
-  
-  #twitter {
-    overflow-x: hidden;
-    position: absolute;
-    top: 15px;
-    right: 260px;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "font-family: Tahoma, sans-serif";
+  scroll-behavior: smooth;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+
+a, a:hover, a:visited, a:active {
+  overflow-x: hidden;
+  color: white;
+  text-decoration: none;
+ }
+
+.header {
+  overflow-x: hidden;
+  padding: 60px;
+  text-align: center;
+  background: #fafafa;
+  color: white;
+  font-size: 30px;
+}
+
+.navbar {
+  overflow-x: hidden;
+  background: #0D0D0D;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.navbar__container {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: -50%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.navbar__menu {
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar__item {
+  overflow-x: hidden;
+  height: 80px;
+}
+
+.navbar__links {
+  overflow-x: hidden;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.Button {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+  overflow-x: hidden;
+  color: #36A0D9;
+  transition: all 0.3s ease;
+}
+
+#log_button{
+overflow-x: hidden;
+position: absolute;
+top: 17px;
+right: calc(50% + 425px);
+color: white;
+top: 12px;
+width: 140px;
+height: 35px;
+border-radius: 20px;
+background-image: linear-gradient(45deg, #00ffff, #14e6b1, #02d3e2);
+font-size: 21px;
+}
+
+#button-text{
+position: absolute;
+top: 6px;
+}
+
+#stack {
+  overflow-x: hidden;
+  position: absolute;
+  top: 10px;
+  right: 80px;
+}
+
+#engineer {
+  overflow-x: hidden;
+  position: absolute;
+  top: 0px;
+  right: 160px;
+}
+
+#twitter {
+  overflow-x: hidden;
+  position: absolute;
+  top: 15px;
+  right: 260px;
+}
   
   
   .Main {
@@ -211,8 +240,6 @@
     padding: 10px;
     background: linear-gradient(#333232, #292828) 8px 8px/calc(100% - 16px) calc(100% - 16px) no-repeat;
   }
-
-
 
 
 .Project_box_AI_Code{

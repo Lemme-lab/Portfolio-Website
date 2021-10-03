@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login_Form</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Sign-Up_style.css" />
 </head>
 <body>
     <nav class="navbar">
@@ -16,19 +16,23 @@
 
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="#header" class="navbar__links" id="home-page">Home</a>
+                    <a href="http://127.0.0.1:5500/Main-Page/index.html#header" class="navbar__links" id="home-page">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#services" class="navbar__links" id="Abilities">Abilities</a>
+                    <a href="http://127.0.0.1:5500/Main-Page/index.html#header" class="navbar__links" id="Abilities">Abilities</a>
                 </li>
 
                 <li class="navbar__item">
-                    <a href="#about_me" class="navbar__links" id="About">About</a>
+                    <a href="http://127.0.0.1:5500/Main-Page/index.html#header" class="navbar__links" id="About">About</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#work" class="navbar__links" id="services-page">My Work</a>
+                    <a href="http://127.0.0.1:5500/Main-Page/index.html#header" class="navbar__links" id="services-page">My Work</a>
                 </li>
             </ul>
+        </div>
+
+        <div class="button-link" id="log_button">
+            <a href="http://127.0.0.1:5500/Login_Form/Login.html#work" id="button-text">&nbsp;&nbsp;&nbsp;&nbsp;Sign-In/Up</a>
         </div>
         
         <div class="stack_overflow" id="stack">
@@ -51,54 +55,39 @@
 
     </nav>
   
+    <nav class="Main">
+
+        <button id="login">
+            <a href="http://127.0.0.1:5500/Login_Form/Login.html" style="color: black;">  Login  </a>
+        </button>
+         <button id="sign">Sign Up</button>
 
 
-        <div class="container">
-            <form class="signUp">
-                <h3>Create Your Account</h3>
-                <p>Just enter your email address</br>
-        and your password for join.
-                </p>
-                <input class="w100" type="email" placeholder="Insert eMail" reqired autocomplete='off' />
-                <input type="password" placeholder="Insert Password" reqired />
-                <input type="password" placeholder="Verify Password" reqired />
-                <button class="form-btn sx log-in" type="button">Log In</button>
-                <button class="form-btn dx" type="submit">Sign Up</button>
-            </form>
-            <form class="signIn">
-                <h3>Welcome</br>Back !</h3>
-                <button class="fb" type="button">Log In With Facebook</button>
-                <p>- or -</p>
-                <input type="email" placeholder="Insert eMail" autocomplete='off' reqired />
-                <input type="password" placeholder="Insert Password" reqired />
-                <button class="form-btn sx back" type="button">Back</button>
-                <button class="form-btn dx" type="submit">Log In</button>
-            </form>
-        </div>
-
- <!--
+        <form action="action_page.php" method="post">
 
             <div class="Auth">
 				<h1>Authentication</h1>
 			</div>
-          
-                    <button id="sign">Sign Up</button>
-                    <button id="login">Login</button>
-            
+                          
              <div class="container">
               <label class="uname"><b>Email</b></label>
               <input type="text" placeholder="Enter Email" name="uname" required>    
               <label class="psw"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
               <button type="submit" class="btn">Login</button>
+              <label class="rp_psw"><b>Repeat Password</b></label>
+              <input type="rp_password" placeholder="Repeat Password" name="rp_psw" required>
+              <button type="submit" class="btn">Login</button>
             </div>
+
+
+
           
             <div class="container">
               <span class="fpsw">Forgot <a href="#" >password?</a></span>
             </div>
-         
-            -->
-
+          </form>
+    </nav>
 
 
 

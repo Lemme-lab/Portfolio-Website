@@ -15,8 +15,6 @@
 
         <div class="navbar__container">
 
-
-
             <ul class="navbar__menu">
                 <li class="navbar__item">
                     <a href="#header" class="navbar__links" id="home-page">Home</a>
@@ -33,7 +31,13 @@
                 </li>
             </ul>
         </div>
-        
+
+    
+        <div class="button-link" id="log_button">
+            <a href="http://127.0.0.1:5500/Login_Form/Login.html#work" id="button-text">&nbsp;&nbsp;&nbsp;&nbsp;Sign-In/Up</a>
+        </div>
+
+
         <div class="stack_overflow" id="stack">
             <a href="https://stackoverflow.com/users/14211553/schleichdie">
                 <img alt="" src="kisspng-stackoverflow-icon-5d3ff473d685e2.1313915615644724358787.png" width="50" height="50">
@@ -317,6 +321,32 @@
 
 
         </div>
+
+        <div class="contact">
+            <form action="contact.php">
+
+                <label for="cnt_label" style="color: white; font-size: 40px;" >Contact:</label>
+              
+          
+              <!--<label for="fname" style="color: white;">Email</label> -->
+              <input type="text" id="fname" name="firstname" placeholder="Email">
+          
+                <!--<label for="lname" style="color: white;">First Name</label>-->
+              <input type="text" id="lname" name="lastname" placeholder="First name..">
+          
+                <!--<label for="lname" style="color: white;">Last Name</label>-->
+              <input type="text" id="lname" name="lastname" placeholder="Last name..">
+          
+              <!--<label for="subject" style="color: white;">Subject</label>-->
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+
+
+
 
     <script src="app.js"></script>
     </nav>
