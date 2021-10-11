@@ -433,36 +433,22 @@ color: black;
     position: absolute;
     border-radius: 8px;
     top: 3350px;
-    right: calc(50% + 100px);
-    height: 425px;
-    width: calc(27% );
+    right: calc(+6%);
+    height: 75px;
+    width: calc(70% + 200px );
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: "4907157.jpg";
     background-color: rgb(255, 255, 255);
+    display: inline-block;
 }
 
-.mBot_toDO_Head{
-    position: absolute;
-    top: 3375px;
-    right: calc(50% + 225px);
-    margin: 10px;
-    overflow-x: hidden;
-    position: absolute;
-    font-size: 3rem;
-    color: #000000;
-}
-
-.mBot_toDO_list{
-    position: absolute;
-    top: 3475px;
-    right: calc(50% + 95px);
-    margin: 10px;
-    overflow-x: hidden;
-    position: absolute;
-    font-size: 2.35rem;
-    color: #000000;
+.toDo_text{
+  display: inline-block;
+  padding-left: 80px;
+  padding-top: 15px;
+  font-size: xx-large;
 }
 
 pre {
@@ -487,7 +473,7 @@ pre {
     cursor: pointer;
     position: absolute;
     top: 3400px;
-    right: calc(50% - 325px);
+    right: calc(50% - 225px);
     transition: all 0.35s;
     outline: none;
     
@@ -505,7 +491,7 @@ pre {
     cursor: pointer;
     position: absolute;
     top: 3500px;
-    right: calc(50% - 325px);
+    right: calc(50% - 225px);
     transition: all 0.35s;
     outline: none;
   }

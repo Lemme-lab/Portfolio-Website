@@ -142,7 +142,7 @@
     overflow-x: hidden;
     padding: auto;
     width: auto;
-    height: 873px;
+    height: 876px;
     background-color: #222;
 
   }
@@ -165,12 +165,12 @@
     top: 80px;
     right: calc(50% + 210px);
     font-family: 'Josefin Sans', sans-serif;
-      color: #222;
+      color: rgb(255, 255, 255);
       font-size: 50px;
       letter-spacing: 4px;
       margin: 0px;
       font-weight: 700;
-      text-shadow: 2px 2px 0px #c9c9c9, -2px -2px 0px #c9c9c9;
+   
     }
   
 

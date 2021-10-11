@@ -364,9 +364,9 @@ top: 6px;
   overflow-x: hidden;
   position: absolute;
   top: 980px;
-  right: 20px;
+  right: 10px;
   height: 600px;
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   
   display: flex;
   flex-direction: column;
@@ -423,7 +423,7 @@ top: 6px;
   top: 1850px;
   right: calc(50% - 200px);
   font-size: 4rem;
-  color: #1a1818;
+  color: #686767;
   text-shadow: 2px 2px 0px #1199c2, -2px -2px 0px #09e3eb, 0px 0px 8px #1c9ce6;
 }
 
@@ -447,7 +447,7 @@ top: 6px;
   padding-right: 70px;
   position: absolute;
   top: 2225px;
-  right: calc(50% - 610px);
+  right: calc(50% - 720px);
   font-size: 1.5rem;
 }
 
@@ -519,7 +519,7 @@ top: 6px;
   padding-left: 40px;
   position: absolute;
   top: 3075px;
-  right: calc(50% - 50px);
+  right: calc(50% + 50px);
   font-size: 1.5rem;
 }
 
@@ -852,7 +852,7 @@ top: 6px;
 input[type=text], select, textarea {
   width: 100%; 
   padding: 12px;
-  border: 3px solid rgb(3, 250, 209); 
+  border: 3px solid rgb(0, 0, 0); 
   border-radius: 4px; 
   box-sizing: border-box; 
   margin-top: 6px;
@@ -862,7 +862,7 @@ input[type=text], select, textarea {
 
 
 input[type=submit] {
-  margin-left: 200px;
+  margin-left: 400px;
   text-align: center;
   width: 200px;
   background-color: #13d8adc2;
@@ -881,10 +881,10 @@ input[type=submit]:hover {
 
 .contact {
   height: 650px;
-  width: 650px;
+  width: 1050px;
   position: absolute;
   top:7670px;
-  right: calc(50% - 345px);
+  right: calc(50% - 575px);
   border-radius: 5px;
   background: linear-gradient(45deg, #0f0f0f, #141414, #1C1919, #191716);
   padding: 20px;
