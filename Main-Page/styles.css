@@ -104,7 +104,7 @@ top: 12px;
 width: 140px;
 height: 35px;
 border-radius: 20px;
-background-image: linear-gradient(45deg, #00ffff, #14e6b1, #02d3e2);
+background-image: linear-gradient(45deg, #13a7d4, #14e6b1, #20a4c5);
 font-size: 21px;
 }
 
@@ -140,7 +140,7 @@ top: 6px;
   overflow-x: hidden;
   padding: auto;
   width: auto;
-  height:8350px;
+  height:7650px;
   background: linear-gradient(45deg, #000000, #141414, #1C1919, #191716);
 
 }
@@ -162,7 +162,7 @@ top: 6px;
   overflow-x: hidden;
   position: absolute;
   top: 825px;
-  right: calc(50% - 100px);
+  right: calc(50% - 150px);
   font-size: 2.5em;
   color: rgb(58, 135, 158);
 
@@ -172,7 +172,7 @@ top: 6px;
   overflow-x: hidden;
   position: absolute;
   top: 240px;
-  right: calc(50% - 405px);
+  right: calc(50% - 425px);
   font-size: 1.8em;
   color: white;
 }
@@ -181,7 +181,7 @@ top: 6px;
   overflow-x: hidden;
   position: absolute;
   top: 325px;
-  right: calc(50% - 315px);
+  right: calc(50% - 335px);
   font-size: 4.0em;
 
   background-image: linear-gradient(45deg, #0F345C, #297AA6, #85CCF2);
@@ -364,9 +364,9 @@ top: 6px;
   overflow-x: hidden;
   position: absolute;
   top: 980px;
-  right: 10px;
+  right: 20px;
   height: 600px;
-  width: calc(100% - 20px);
+  width: calc(100% - 40px);
   
   display: flex;
   flex-direction: column;
@@ -849,6 +849,7 @@ top: 6px;
 }
 
 
+/*
 input[type=text], select, textarea {
   width: 100%; 
   padding: 12px;
@@ -879,6 +880,8 @@ input[type=submit]:hover {
   background-color: #45a085;
 }
 
+form #website{ display:none; }
+
 .contact {
   height: 650px;
   width: 1050px;
@@ -889,6 +892,7 @@ input[type=submit]:hover {
   background: linear-gradient(45deg, #0f0f0f, #141414, #1C1919, #191716);
   padding: 20px;
 }
+*/
 
 
 
