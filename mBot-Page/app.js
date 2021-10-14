@@ -1,30 +1,27 @@
-$(document).ready(function() {
-    $(".myvideos").on("mouseover", function(event) {
-      this.play();
-  
-    }).on('mouseout', function(event) {
-      this.pause();
-  
-    });
-  })
+var header = document.getElementById('header');
 
-  var slider_img = document.querySelector('.slider-img');
-  var images = ['a.png', 'b.png', 'a.png', 'b.png', 'a.png'];
-  var i = 0;
-  
-  function prev(){
-      if(i <= 0) i = images.length;	
-      i--;
-      return setImg();			 
+function fadeOutOnScroll(element) {
+  if (!element) {
+    return;
   }
   
-  function next(){
-      if(i >= images.length-1) i = -1;
-      i++;
-      return setImg();			 
+  var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+  var elementHeight = element.offsetHeight;
+  var scrollTop = document.documentElement.scrollTop;
+  
+  var opacity = 1;
+  
+  if (scrollTop > distanceToTop) {
+    opacity = 0.6 - (scrollTop - distanceToTop) / elementHeight;
   }
   
-  function setImg(){
-      return slider_img.setAttribute('src', "images/"+images[i]);
-      
+  if (opacity >= 0) {
+    element.style.opacity = opacity;
   }
+}
+
+function scrollHandler() {
+  fadeOutOnScroll(header);
+}
+
+window.addEventListener('scroll', scrollHandler);
