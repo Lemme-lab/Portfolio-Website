@@ -9,7 +9,6 @@
   
   }
   
-  
   a, a:hover, a:visited, a:active {
     overflow-x: hidden;
     color: white;
@@ -75,7 +74,7 @@
   }
   
   
-  .button {
+  .Button {
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -92,8 +91,27 @@
   
   .navbar__links:hover {
     overflow-x: hidden;
-    color: #36A0D9;
+    color: #F2E529;
     transition: all 0.3s ease;
+  }
+  
+  #log_button{
+  overflow-x: hidden;
+  position: absolute;
+  top: 17px;
+  right: calc(50% + 425px);
+  color: white;
+  top: 12px;
+  width: 140px;
+  height: 35px;
+  border-radius: 20px;
+  background-image: linear-gradient(45deg, #BFB417, #D9CC1E, #F2E529);
+  font-size: 21px;
+  }
+  
+  #button-text{
+  position: absolute;
+  top: 6px;
   }
   
   #stack {

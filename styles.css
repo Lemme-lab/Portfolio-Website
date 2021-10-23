@@ -90,7 +90,7 @@ a, a:hover, a:visited, a:active {
 
 .navbar__links:hover {
   overflow-x: hidden;
-  color: #36A0D9;
+  color: #F2E529;
   transition: all 0.3s ease;
 }
 
@@ -104,7 +104,7 @@ top: 12px;
 width: 140px;
 height: 35px;
 border-radius: 20px;
-background-image: linear-gradient(45deg, #13a7d4, #14e6b1, #20a4c5);
+background-image: linear-gradient(45deg, #BFB417, #D9CC1E, #F2E529);
 font-size: 21px;
 }
 
@@ -161,10 +161,10 @@ top: 6px;
 .Text_3 {
   overflow-x: hidden;
   position: absolute;
-  top: 825px;
+  top: 785px;
   right: calc(50% - 150px);
   font-size: 2.5em;
-  color: rgb(58, 135, 158);
+  color: #F2BB16;
 
 }
 
@@ -184,7 +184,7 @@ top: 6px;
   right: calc(50% - 335px);
   font-size: 4.0em;
 
-  background-image: linear-gradient(45deg, #0F345C, #297AA6, #85CCF2);
+  background-image: linear-gradient(45deg, #F2E529, #D9CC1E, #f7e709);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -251,31 +251,26 @@ top: 6px;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #29445E 100%);
+  background-image: linear-gradient(to right, #F2E529 0%, #D9CC1E 100%);
   transition: 0.3s ease-in;
 }
 
 .services__card:nth-child(2) {
   overflow-x: hidden;
   background: #1fa2ff;
-  background: -webkit-linear-gradient(to right,
-      #a6ffcb,
-      #12d8fa,
-      #1fa2ff,
-      #364559);
   background: linear-gradient(to right,
-      #5FA1DE,
-      #5FA1DE,
-      #013566);
+  #F2A413,
+  #F2A413,
+  #F2CF1D);
 }
 
 .services__card:nth-child(3) {
   overflow-x: hidden;
   background-image: linear-gradient(-225deg,
-      #29445E 0%,
-      #013566 29%,
-      #5D84A6 67%,
-      #364559 100%);
+  #F2CF1D 0%,
+  #F2A413 29%,
+  #F28C0F 67%,
+  #F2CF1D 100%);
 }
 
 .services__card h2 {
@@ -435,7 +430,7 @@ top: 6px;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  background-image: linear-gradient(to right, #F2E529 0%, #D9CC1E 100%);
 }
 
 .About_1_Bild {
@@ -459,7 +454,7 @@ top: 6px;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  background-image: linear-gradient(to right, #F28C0F 0%, #F2E529 100%);
 }
 
 .About_2_Bild {
@@ -718,7 +713,7 @@ top: 6px;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(45deg, #fc00ff, #297AA6, #0F345C);
+  background-image: linear-gradient(45deg, #F28C0F, #BFB417, #F2E529);
 }
 
 .Work__Headline {
@@ -730,7 +725,7 @@ top: 6px;
 
   color: white;
 
-  background-image: linear-gradient(45deg, #fc00ff, #297AA6, #0F345C);
+  background-image: linear-gradient(45deg, #F28C0F, #F2BB16, #F2CF1D);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -752,8 +747,7 @@ top: 6px;
   overflow-x: hidden;
   font-size: 1.8rem;
   background: white;
-  background: -webkit-linear-gradient(to right, #011640, #010D26, #fc00ff);
-  background: linear-gradient(to right, #1B516E, #297AA6, #36A0D9);
+  background: linear-gradient(to right, #F28C0F, #D9CC1E, #F2E529);
   padding: 20px 90px;
   border: none;
   border-radius: 6px;
@@ -784,8 +778,7 @@ top: 6px;
   overflow-x: hidden;
   font-size: 1.8rem;
   background: white;
-  background: -webkit-linear-gradient(to right, #011640, #010D26, #fc00ff);
-  background: linear-gradient(to right, #1B516E, #297AA6, #36A0D9);
+  background: linear-gradient(to right, #F28C0F, #D9CC1E, #F2E529);
   padding: 20px 90px;
   border: none;
   border-radius: 6px;
@@ -934,6 +927,20 @@ form #website{ display:none; }
 
 
 @media screen and (max-width: 1400px) {
+  #log_button{
+    overflow-x: hidden;
+    position: absolute;
+    top: 17px;
+    right: calc(50% + 325px);
+    color: white;
+    top: 12px;
+    width: 140px;
+    height: 35px;
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, #BFB417, #D9CC1E, #F2E529);
+    font-size: 21px;
+    }
+
   .services__card {
 
   margin: 15px;
@@ -980,6 +987,21 @@ form #website{ display:none; }
 }
 
 @media screen and (max-width: 1100px) {
+
+  #log_button{
+    overflow-x: hidden;
+    position: absolute;
+    top: 17px;
+    right: calc(50% + 325px);
+    color: white;
+    top: 12px;
+    width: 140px;
+    height: 35px;
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, #BFB417, #D9CC1E, #F2E529);
+    font-size: 21px;
+    }
+    
   .services__card {
 
   margin: 5px;
@@ -1068,7 +1090,7 @@ form #website{ display:none; }
   
     color: white;
   
-    background-image: linear-gradient(45deg, #fc00ff, #297AA6, #0F345C);
+    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1078,7 +1100,7 @@ form #website{ display:none; }
     padding-right: 70px;
     position: absolute;
     top: 2255px;
-    right: calc(50% - 480px);
+    right: calc(50% - 560px);
     font-size: 1.1rem;
   }
   
@@ -1096,7 +1118,7 @@ form #website{ display:none; }
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: linear-gradient(to right, #F2E529 0%, #D9CC1E 100%);
   }
   
   .About_1_Bild {
@@ -1120,7 +1142,7 @@ form #website{ display:none; }
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: linear-gradient(to right, #F28C0F 0%, #F2E529 100%);
   }
   
   .About_2_Bild {
@@ -1139,7 +1161,7 @@ form #website{ display:none; }
   
     color: white;
   
-    background-image: linear-gradient(45deg, #fc00ff, #297AA6, #0F345C);
+   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1149,7 +1171,7 @@ form #website{ display:none; }
     padding-left: 40px;
     position: absolute;
     top: 3075px;
-    right: calc(50% - 60px);
+    right: calc(50% + 10px);
     font-size: 1.1rem;
   }
 
@@ -1166,7 +1188,7 @@ form #website{ display:none; }
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(45deg, #fc00ff, #297AA6, #0F345C);
+    background-image: linear-gradient(45deg, #F28C0F, #BFB417, #F2E529);
   }
   
   .Work__Headline {
@@ -1178,7 +1200,7 @@ form #website{ display:none; }
   
     color: white;
   
-    background-image: linear-gradient(45deg, #fc00ff, #297AA6, #0F345C);
+    background: linear-gradient(to right, #F28C0F, #D9CC1E, #F2E529);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
@@ -1198,8 +1220,7 @@ form #website{ display:none; }
     overflow-x: hidden;
     font-size: 1.8rem;
     background: white;
-    background: -webkit-linear-gradient(to right, #011640, #010D26, #fc00ff);
-    background: linear-gradient(to right, #1B516E, #297AA6, #36A0D9);
+    background: linear-gradient(to right, #F28C0F, #D9CC1E, #F2E529);
     padding: 20px 90px;
     border: none;
     border-radius: 6px;
@@ -1217,8 +1238,7 @@ form #website{ display:none; }
     overflow-x: hidden;
     font-size: 1.8rem;
     background: white;
-    background: -webkit-linear-gradient(to right, #011640, #010D26, #fc00ff);
-    background: linear-gradient(to right, #1B516E, #297AA6, #36A0D9);
+    background: linear-gradient(to right, #F28C0F, #D9CC1E, #F2E529);
     padding: 20px 90px;
     border: none;
     border-radius: 6px;
