@@ -268,8 +268,8 @@ top: 6px;
   overflow-x: hidden;
   background-image: linear-gradient(-225deg,
   #F2CF1D 0%,
-  #F2A413 29%,
-  #F28C0F 67%,
+  #fded07 29%,
+  #f2d00f 67%,
   #F2CF1D 100%);
 }
 
@@ -747,7 +747,7 @@ top: 6px;
   overflow-x: hidden;
   font-size: 1.8rem;
   background: white;
-  background: linear-gradient(to right, #F28C0F, #D9CC1E, #F2E529);
+  background: linear-gradient(to right, #f2c80f, #D9CC1E, #F2E529);
   padding: 20px 90px;
   border: none;
   border-radius: 6px;
