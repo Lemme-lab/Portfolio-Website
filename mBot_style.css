@@ -139,7 +139,7 @@ top: 6px;
     overflow-x: hidden;
     padding: auto;
     width: auto;
-    height: 3850px;
+    height: 3650px;
     background: linear-gradient(45deg, #000000, #141414, #1C1919, #191716);
   }
 
@@ -450,13 +450,40 @@ color: black;
   font-size: xx-large;
 }
 
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+	background-color: #CCCCCC;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(0, 0, 0, 1) 0%,
+											  rgba(0, 0, 0, 1) 25%,
+											  transparent 100%,
+											  rgba(0, 0, 0, 1) 75%,
+											  transparent)
+}
+
+
+
 pre {
   overflow-y: auto;
   overflow-x: visible;
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
   padding: 10px;
-  background: linear-gradient(#333232, #292828) 8px 8px/calc(100% - 16px) calc(100% - 16px) no-repeat;
+  background-color: #ffffff;
+  
 }
 
 

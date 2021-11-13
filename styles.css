@@ -8,6 +8,30 @@
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+	background-color: #CCCCCC;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(0, 0, 0, 1) 0%,
+											  rgba(0, 0, 0, 1) 25%,
+											  transparent 100%,
+											  rgba(0, 0, 0, 1) 75%,
+											  transparent)
+}
+
 a, a:hover, a:visited, a:active {
   overflow-x: hidden;
   color: white;
@@ -140,7 +164,7 @@ top: 6px;
   overflow-x: hidden;
   padding: auto;
   width: auto;
-  height:7650px;
+  height:8400px;
   background: linear-gradient(45deg, #000000, #141414, #1C1919, #191716);
 
 }
@@ -493,7 +517,7 @@ top: 6px;
 .divider_1 {
   overflow-x: hidden;
   position: absolute;
-  top: 3750px;
+  top: 3700px;
   right: 0px;
   width: 100%;
   height: 350px;
@@ -505,7 +529,7 @@ top: 6px;
 .divider_2 {
   overflow-x: hidden;
   position: absolute;
-  top: 6300px;
+  top: 7000px;
   right: 0px;
   width: 100%;
   height: 350px;
@@ -517,13 +541,68 @@ top: 6px;
 .background_2{
   overflow-x: hidden;
   position: absolute;
-  top: 4099px;
+  top: 4049px;
   right: 0px;
   width: 100%;
-  height: 2203px;
+  height: 2953px;
   transform: rotate(-5deg);
   transform: skewY(-8deg);
   background-color: #f7f7f7;
+}
+
+.Crypto_Box{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 4350px;
+  right: calc(2.35% - 55px);
+  margin: 40px;
+  height: 750px;
+  width: 96.4%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  background-color: black;
+
+
+  display: block;
+  box-shadow: rgb(83, 90, 90) 1px 1px 0,
+              rgb(83, 90, 90)2px 2px 0,
+              rgb(83, 90, 90)3px 3px 0,
+              rgb(83, 90, 90)4px 4px 0,
+              rgb(83, 90, 90)5px 5px 0,
+              rgb(83, 90, 90)6px 6px 0,
+              rgb(83, 90, 90)7px 7px 0,
+              rgb(83, 90, 90)8px 8px 0;
+}
+
+.Crypto_text{
+  overflow-x: hidden;
+  position: absolute;
+  top: 40px;
+  right: calc(50% - 180px);
+  font-size: 2.2rem;
+  color: white;
+  font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Crypto_text_2{
+  overflow-x: hidden;
+  top: 110px;
+  position: absolute;
+  right: calc(50% - 95px);
+  color: #ffffff;
+  
+  font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Crypto_Image{
+  overflow-x: hidden;
+  top: 190px;
+  position: absolute;
+  right: calc( 50% - 210px);
 }
 
 .First_Box_text{
@@ -569,7 +648,7 @@ top: 6px;
   overflow-x: hidden;
   overflow-y: hidden;
   position: absolute;
-  top: 4400px;
+  top: 5150px;
   right: calc(2.35% - 55px);
   margin: 40px;
   height: 750px;
@@ -622,7 +701,7 @@ top: 6px;
 .Second_Box{
   overflow-x: hidden;
   position: absolute;
-  top: 5200px;
+  top: 5950px;
   right: calc(51.6% - 50px);
   margin: 40px;
   height: 810px;
@@ -675,7 +754,7 @@ top: 6px;
 .Third_Box{
   overflow-x: hidden;
   position: absolute;
-  top: 5200px;
+  top: 5950px;
   right: calc(2.5% - 55px);
   margin: 40px;
   height: 810px;
@@ -703,7 +782,7 @@ top: 6px;
 .Work_Rahmen {
   overflow-x: hidden;
   position: absolute;
-  top: 7000px;
+  top: 7750px;
   right: calc(50% - 100px);
   margin: 10px;
   height: 450px;
@@ -719,7 +798,7 @@ top: 6px;
 .Work__Headline {
   overflow-x: hidden;
   position: absolute;
-  top: 7100px;
+  top: 7850px;
   right: calc(50% - 475px);
   font-size: 3rem;
 
@@ -734,7 +813,7 @@ top: 6px;
 .Work__Headline_2 {
   overflow-x: hidden;
   position: absolute;
-  top: 7175px;
+  top: 7925px;
   right: calc(50% - 540px);
   font-size: 1rem;
 
@@ -754,7 +833,7 @@ top: 6px;
   margin-top: 5rem;
   cursor: pointer;
   position: absolute;
-  top: 7200px;
+  top: 7950px;
   right: calc(50% - 525px);
   transition: all 0.35s;
   outline: none;
@@ -785,7 +864,7 @@ top: 6px;
   margin-top: 5rem;
   cursor: pointer;
   position: absolute;
-  top: 7300px;
+  top: 8050px;
   right: calc(50% - 525px);
   transition: all 0.35s;
   outline: none;
@@ -806,11 +885,10 @@ top: 6px;
 .Work__Header {
   overflow-x: hidden;
   position: absolute;
-  top: 6850px;
+  top: 7600px;
   right: calc(50% - 50px);
   font-size: 3rem;
-  color: #1a1818;
-  text-shadow: 2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 0px 0px 8px #ffffff;
+  color: #ffffff;
 }
 
 
