@@ -1,5 +1,5 @@
 # Portfolio-Website
-A little Portfolio Website
+A little Portfolio Website.
 Visit the Website under https://lemme.one
 
 ![Screenshot_59](https://user-images.githubusercontent.com/71924682/149637792-61431599-28d8-4bd6-aee7-d73b38865cbb.png)
